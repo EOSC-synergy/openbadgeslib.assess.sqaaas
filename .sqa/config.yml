@@ -15,54 +15,54 @@ sqa_criteria:
     repos:
       github.com/luisgf/openbadgeslib git:
         commands:
-        - /usr/bin/env sh .sqa/script.pine_inspired_falcon.sh
-        container: qc.acc_umber_supportive_mandrill
+        - /usr/bin/env sh .sqa/script.plum_bubbly_gnu.sh
+        container: qc.acc_mint_resourceful_gorilla
   QC.Doc:
     repos:
       github.com/luisgf/openbadgeslib find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.raven_content_pelican.sh
-        container: qc.doc_glaucous_insightful_thrush
+        - /usr/bin/env sh .sqa/script.pineapple_methodical_ocelot.sh
+        container: qc.doc_flint_carefree_pegasus
       github.com/luisgf/openbadgeslib git:
         commands:
-        - /usr/bin/env sh .sqa/script.incarnadine_assured_kiwi.sh
-        container: qc.doc_frost_resilient_tiger
+        - /usr/bin/env sh .sqa/script.boysenberry_happy_stingray.sh
+        container: qc.doc_fern_shy_kiwi
       github.com/luisgf/openbadgeslib markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.marigold_organized_gazelle.sh
-        container: qc.doc_cinnamon_understanding_toucan
+        - /usr/bin/env sh .sqa/script.gunmetal_frugal_falcon.sh
+        container: qc.doc_indigo_inventive_lobster
   QC.Lic:
     repos:
       github.com/luisgf/openbadgeslib licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gold_shrewd_anaconda.sh
-        container: qc.lic_peony_hopeful_roc
+        - /usr/bin/env sh .sqa/script.powder_dreamy_tapir.sh
+        container: qc.lic_arctic_foolish_sphinx
   QC.Sec:
     repos:
       github.com/luisgf/openbadgeslib bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.watermelon_happy_snail.sh
-        container: qc.sec_bone_forgiving_python
+        - /usr/bin/env sh .sqa/script.salmon_perky_gorilla.sh
+        container: qc.sec_obsidian_affectionate_toucan
   QC.Sty:
     repos:
       github.com/luisgf/openbadgeslib flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.smoke_productive_narwhal.sh
-        container: qc.sty_green_reserved_whale
+        - /usr/bin/env sh .sqa/script.violet_understanding_axolotl.sh
+        container: qc.sty_khaki_understanding_roadrunner
       github.com/luisgf/openbadgeslib jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bronze_affectionate_mongoose.sh
-        container: qc.sty_smoke_mischievous_tortoise
+        - /usr/bin/env sh .sqa/script.orange_sincere_spren.sh
+        container: qc.sty_lime_stoic_marmoset
   QC.Uni:
     repos:
       github.com/luisgf/openbadgeslib pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.sapphire_savvy_manta.sh
-        container: qc.uni_marigold_rugged_iguana
+        - /usr/bin/env sh .sqa/script.ice_cautious_seal.sh
+        container: qc.uni_viridian_alert_penguin
   QC.Ver:
     repos:
       github.com/luisgf/openbadgeslib get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.navy_sociable_griffin.sh
-        container: qc.ver_red_wise_kookaburra
+        - /usr/bin/env sh .sqa/script.tangerine_skeptical_macaw.sh
+        container: qc.ver_malachite_affectionate_caribou
 timeout: 5400

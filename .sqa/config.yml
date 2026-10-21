@@ -1,0 +1,68 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: fix/updatego
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/luisgf/openbadgeslib:
+      branch: master
+      repo: https://github.com/luisgf/openbadgeslib
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/luisgf/openbadgeslib git:
+        commands:
+        - /usr/bin/env sh .sqa/script.pine_inspired_falcon.sh
+        container: qc.acc_umber_supportive_mandrill
+  QC.Doc:
+    repos:
+      github.com/luisgf/openbadgeslib find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.raven_content_pelican.sh
+        container: qc.doc_glaucous_insightful_thrush
+      github.com/luisgf/openbadgeslib git:
+        commands:
+        - /usr/bin/env sh .sqa/script.incarnadine_assured_kiwi.sh
+        container: qc.doc_frost_resilient_tiger
+      github.com/luisgf/openbadgeslib markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.marigold_organized_gazelle.sh
+        container: qc.doc_cinnamon_understanding_toucan
+  QC.Lic:
+    repos:
+      github.com/luisgf/openbadgeslib licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.gold_shrewd_anaconda.sh
+        container: qc.lic_peony_hopeful_roc
+  QC.Sec:
+    repos:
+      github.com/luisgf/openbadgeslib bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.watermelon_happy_snail.sh
+        container: qc.sec_bone_forgiving_python
+  QC.Sty:
+    repos:
+      github.com/luisgf/openbadgeslib flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.smoke_productive_narwhal.sh
+        container: qc.sty_green_reserved_whale
+      github.com/luisgf/openbadgeslib jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.bronze_affectionate_mongoose.sh
+        container: qc.sty_smoke_mischievous_tortoise
+  QC.Uni:
+    repos:
+      github.com/luisgf/openbadgeslib pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.sapphire_savvy_manta.sh
+        container: qc.uni_marigold_rugged_iguana
+  QC.Ver:
+    repos:
+      github.com/luisgf/openbadgeslib get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.navy_sociable_griffin.sh
+        container: qc.ver_red_wise_kookaburra
+timeout: 5400
